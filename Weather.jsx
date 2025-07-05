@@ -15,7 +15,7 @@ const Weather = () => {
     setError(null);
     
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e5c23aedb1e89f2b410a8386293286d9&units=metric`);
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=YOUR_API_KEY&units=metric`);
       const data = await response.json();
       setTimeout(() => {
         setWeatherData({
